@@ -1,3 +1,3 @@
-# CogMAEC: Cognition-driven Multimodal Affective and Empathetic Computing
+# CogAFFC: Cognition-driven Affective Computing
 
-https://cogmaec.github.io/
+https://cogaffc.github.io/
