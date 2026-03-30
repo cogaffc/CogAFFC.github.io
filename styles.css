@@ -321,7 +321,8 @@ button,
 
 .hero-stats {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(18rem, 22rem));
+  justify-content: center;
   gap: 1rem;
   margin: 2.2rem 0 0;
   padding: 0;
