@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CogMAEC is a research thread on cognition-driven multimodal affective and empathetic computing."
+    />
+    <title>CogMAEC | Cognition-driven Multimodal Affective and Empathetic Computing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Sora:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a" aria-hidden="true"></div>
+    <div class="ambient ambient-b" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="CogMAEC home">
+        <span class="brand-mark">C</span>
+        <span class="brand-text">cogmaec</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#thread">Gallery</a>
+        <a href="#works">Works</a>
+        <a href="#community">Workshop</a>
+        <!-- <a href="#survey">Survey</a> -->
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-pad">
+        <h1 class="hero-title hero-title-banner" data-reveal>
+          Cognition-driven Multimodal Affective and Empathetic Computing
+        </h1>
+
+        <div class="hero-body">
+          <div class="hero-copy" data-reveal>
+            <p class="hero-lead">Building multimodal AI that can read <span class="highlight highlight-coral">affect</span>, model <span class="highlight highlight-teal">minds</span>, and recover <span class="highlight highlight-gold">what people mean beyond what they say</span>. CogMAEC is motivated by a core gap: multimodal systems can often recognize visible emotion, yet still fail to explain why it emerges, what mental state causes it, and what hidden social meaning is being conveyed. It connects multimodal perception, Theory-of-Mind reasoning, implicit social context, and empathetic intelligence into one coherent agenda.</p>
+            <ul class="hero-stats" aria-label="Project summary">
+              <li>
+                <strong>02</strong>
+                <span>flagship research works</span>
+              </li>
+              <li>
+                <strong>01</strong>
+                <span>community workshop already held</span>
+              </li>
+              <li>
+                <strong>+1</strong>
+                <span>survey paper in preparation</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" data-reveal>
+            <div class="visual-card">
+              <div class="floating-chip chip-a">Emotion reasoning</div>
+              <div class="floating-chip chip-b">Theory of Mind</div>
+              <div class="floating-chip chip-c">Implicit social context</div>
+              <svg viewBox="0 0 620 520" role="img" aria-label="CogMAEC research map">
+                <defs>
+                  <linearGradient id="ringOne" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ffd5ba" />
+                    <stop offset="100%" stop-color="#ff8a6d" />
+                  </linearGradient>
+                  <linearGradient id="ringTwo" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#bef0e5" />
+                    <stop offset="100%" stop-color="#3a9286" />
+                  </linearGradient>
+                  <linearGradient id="ringThree" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ffe7a1" />
+                    <stop offset="100%" stop-color="#d6a145" />
+                  </linearGradient>
+                  <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur stdDeviation="18" result="blur" />
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                </defs>
+
+                <rect x="18" y="20" width="584" height="480" rx="32" fill="rgba(10, 16, 33, 0.62)" />
+
+                <circle cx="310" cy="260" r="180" fill="none" stroke="url(#ringThree)" stroke-width="2.8" opacity="0.5" />
+                <circle cx="310" cy="260" r="128" fill="none" stroke="url(#ringTwo)" stroke-width="3.5" opacity="0.78" />
+                <circle cx="310" cy="260" r="76" fill="none" stroke="url(#ringOne)" stroke-width="4.5" opacity="0.95" />
+                <circle cx="310" cy="260" r="42" fill="#13213d" stroke="#f8dcc3" stroke-width="2" filter="url(#softGlow)" />
+
+                <text x="310" y="250" text-anchor="middle" class="hero-svg-overline">Affection</text>
+                <text x="310" y="276" text-anchor="middle" class="hero-svg-title">cognition</text>
+<!-- 
+                <text x="310" y="118" text-anchor="middle" class="hero-svg-label">social context</text>
+                <text x="310" y="390" text-anchor="middle" class="hero-svg-label">empathetic response</text>
+                <text x="150" y="266" text-anchor="middle" class="hero-svg-label">mental states</text>
+                <text x="470" y="266" text-anchor="middle" class="hero-svg-label">reasoning scaffold</text> -->
+
+                <rect x="72" y="102" width="118" height="42" rx="21" fill="#1d3053" stroke="#7fe0d0" stroke-width="1.5" />
+                <text x="131" y="129" text-anchor="middle" class="hero-svg-chip">affection</text>
+
+                <rect x="440" y="120" width="108" height="42" rx="21" fill="#2b2036" stroke="#ffb991" stroke-width="1.5" />
+                <text x="494" y="147" text-anchor="middle" class="hero-svg-chip">intent</text>
+
+                <rect x="434" y="350" width="114" height="42" rx="21" fill="#2d2a17" stroke="#f1cb76" stroke-width="1.5" />
+                <text x="491" y="377" text-anchor="middle" class="hero-svg-chip">stance</text>
+
+                <rect x="72" y="356" width="124" height="42" rx="21" fill="#142636" stroke="#9fdde7" stroke-width="1.5" />
+                <text x="134" y="383" text-anchor="middle" class="hero-svg-chip">emotion causes</text>
+
+                <circle cx="310" cy="132" r="8" fill="#ff8a6d" />
+                <circle cx="436" cy="260" r="8" fill="#3a9286" />
+                <circle cx="310" cy="388" r="8" fill="#d6a145" />
+                <circle cx="184" cy="260" r="8" fill="#76b9ca" />
+
+                <line x1="184" y1="260" x2="234" y2="260" stroke="#7bd6c8" stroke-width="2.5" stroke-dasharray="5 7" />
+                <line x1="310" y1="132" x2="310" y2="184" stroke="#ffb991" stroke-width="2.5" stroke-dasharray="5 7" />
+                <line x1="386" y1="260" x2="436" y2="260" stroke="#7bd6c8" stroke-width="2.5" stroke-dasharray="5 7" />
+                <line x1="310" y1="336" x2="310" y2="388" stroke="#f1cb76" stroke-width="2.5" stroke-dasharray="5 7" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad" id="thread">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Research thread</p>
+          <h2 class="thread-heading">One research thread across series of progressively deeper layers of understanding</h2>
+        </div>
+
+        <div class="thread-map">
+          <article class="thread-card" data-reveal>
+            <div class="thread-step">Layer 1</div>
+            <h3>Multimodal affect signals</h3>
+            <p>
+              Start from the observable world: facial expression, speech, language, video context,
+              and other cross-modal cues that reveal emotional state.
+            </p>
+            <ul>
+              <li>Emotion perception and recognition</li>
+              <li>Cross-modal evidence alignment</li>
+              <li>From cues to grounded observation</li>
+            </ul>
+          </article>
+
+          <article class="thread-card emphasized" data-reveal>
+            <div class="thread-step">Layer 2</div>
+            <h3>Theory-of-Mind reasoning</h3>
+            <p>
+              Move from what is seen to what is mentally simulated: beliefs, intentions, causes,
+              and intermediate cognitive states that explain emotion.
+            </p>
+            <ul>
+              <li>Benchmarking cognitive depth</li>
+              <li>Process-level reasoning supervision</li>
+              <li>Faithful emotional explanation</li>
+            </ul>
+          </article>
+
+          <article class="thread-card" data-reveal>
+            <div class="thread-step">Layer 3</div>
+            <h3>Implicit social meaning</h3>
+            <p>
+              Go beyond explicit emotion to what people actually imply under social constraints,
+              politeness, strategic expression, irony, and hidden stance.
+            </p>
+            <ul>
+              <li>Affection, intent, and stance</li>
+              <li>Conflict-driven abductive reasoning</li>
+              <li>Towards robust empathetic systems</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-pad section-shell" id="works">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Flagship works</p>
+        </div>
+
+        <article class="spotlight-card" id="hitemotion-card" data-reveal>
+          <div class="spotlight-copy">
+            <div class="card-topline">
+              <span class="pill pill-coral">ICLR 2026</span>
+              <span class="pill">Benchmark + Reasoning</span>
+            </div>
+            <h3>
+              <a href="https://hitemotion.github.io/" target="_blank" rel="noreferrer"
+                >Unveiling the Cognitive Compass: Theory-of-Mind-Guided Multimodal Emotion Reasoning</a
+              >
+            </h3>
+            <p>
+              HitEmotion reframes multimodal emotion understanding as a cognition-sensitive task.
+              It introduces a Theory-of-Mind-grounded benchmark and a reasoning pipeline that
+              explicitly tracks mental states instead of relying on shallow post-hoc rationales.
+            </p>
+            <ul class="feature-list">
+              <li>Restructures 24 datasets into three levels of cognitive depth.</li>
+              <li>Diagnoses where current multimodal models break as reasoning gets deeper.</li>
+              <li>Combines ToM-guided reasoning with TMPO process supervision and reinforcement learning.</li>
+            </ul>
+            <div class="card-actions">
+              <a class="button button-primary" href="https://hitemotion.github.io/" target="_blank" rel="noreferrer"
+                >Project</a
+              >
+              <a class="button button-secondary" href="https://arxiv.org/abs/2602.00971" target="_blank" rel="noreferrer"
+                >Paper</a
+              >
+              <a
+                class="button button-secondary"
+                href="https://github.com/Eurekaleo/Emotional-Intelligence"
+                target="_blank"
+                rel="noreferrer"
+                >Code and data</a
+              >
+            </div>
+          </div>
+
+          <div class="spotlight-visual">
+            <svg viewBox="0 0 560 360" role="img" aria-label="HitEmotion overview diagram">
+              <defs>
+                <linearGradient id="hitBackground" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#fff0e3" />
+                  <stop offset="100%" stop-color="#ecf8f6" />
+                </linearGradient>
+                <linearGradient id="hitFlow" x1="0%" y1="50%" x2="100%" y2="50%">
+                  <stop offset="0%" stop-color="#ff8a6d" />
+                  <stop offset="100%" stop-color="#3a9286" />
+                </linearGradient>
+              </defs>
+
+              <rect x="18" y="18" width="524" height="324" rx="28" fill="url(#hitBackground)" />
+              <rect x="50" y="58" width="182" height="56" rx="18" fill="#fffaf6" stroke="#ffb78f" stroke-width="2" />
+              <text x="141" y="80" text-anchor="middle" class="diagram-kicker">Benchmark</text>
+              <text x="141" y="102" text-anchor="middle" class="diagram-label">24 aligned datasets</text>
+
+              <rect x="58" y="142" width="170" height="42" rx="14" fill="#ffd9c5" />
+              <text x="143" y="168" text-anchor="middle" class="diagram-node">Perception and recognition</text>
+              <rect x="58" y="194" width="170" height="42" rx="14" fill="#d5efe9" />
+              <text x="143" y="220" text-anchor="middle" class="diagram-node">Understanding and analysis</text>
+              <rect x="58" y="246" width="170" height="42" rx="14" fill="#f9e6b5" />
+              <text x="143" y="272" text-anchor="middle" class="diagram-node">Cognition and reasoning</text>
+
+              <path d="M232 164 C282 164, 298 140, 332 140" fill="none" stroke="url(#hitFlow)" stroke-width="3.2" />
+              <path d="M232 214 C280 214, 296 190, 332 190" fill="none" stroke="url(#hitFlow)" stroke-width="3.2" />
+              <path d="M232 266 C282 266, 298 240, 332 240" fill="none" stroke="url(#hitFlow)" stroke-width="3.2" />
+
+              <rect x="336" y="112" width="176" height="76" rx="20" fill="#17233f" />
+              <text x="424" y="140" text-anchor="middle" class="diagram-kicker diagram-kicker-light">ToM-guided</text>
+              <text x="424" y="166" text-anchor="middle" class="diagram-label-light">mental-state reasoning</text>
+
+              <rect x="336" y="204" width="176" height="76" rx="20" fill="#1f314b" />
+              <text x="424" y="232" text-anchor="middle" class="diagram-kicker diagram-kicker-light">TMPO</text>
+              <text x="424" y="258" text-anchor="middle" class="diagram-label-light">process supervision + RL</text>
+
+              <circle cx="316" cy="150" r="6" fill="#ff8a6d" />
+              <circle cx="316" cy="200" r="6" fill="#3a9286" />
+              <circle cx="316" cy="250" r="6" fill="#d6a145" />
+            </svg>
+          </div>
+        </article>
+
+        <article class="spotlight-card" id="moca-card" data-reveal>
+          <div class="spotlight-header">
+            <div class="card-topline">
+              <span class="pill pill-teal">Progressing</span>
+              <span class="pill">Dataset + Abductive reasoning</span>
+            </div>
+            <h3>MoCA: Implicit Social Context Analysis</h3>
+          </div>
+
+          <div class="spotlight-visual">
+            <svg viewBox="0 0 560 360" role="img" aria-label="MoCA overview diagram">
+              <defs>
+                <linearGradient id="mocaBackground" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#f2fbfa" />
+                  <stop offset="100%" stop-color="#fff3e6" />
+                </linearGradient>
+              </defs>
+
+              <rect x="18" y="18" width="524" height="324" rx="28" fill="url(#mocaBackground)" />
+
+              <rect x="216" y="128" width="128" height="108" rx="24" fill="#192540" />
+              <text x="280" y="164" text-anchor="middle" class="diagram-kicker diagram-kicker-light">CoDAR</text>
+              <text x="280" y="188" text-anchor="middle" class="diagram-label-light">conflict-driven</text>
+              <text x="280" y="210" text-anchor="middle" class="diagram-label-light">abductive reasoning</text>
+
+              <rect x="74" y="80" width="118" height="54" rx="18" fill="#ffd8c4" stroke="#ff8a6d" stroke-width="2" />
+              <text x="133" y="112" text-anchor="middle" class="diagram-node">affection</text>
+
+              <rect x="370" y="80" width="118" height="54" rx="18" fill="#d2f1ea" stroke="#3a9286" stroke-width="2" />
+              <text x="429" y="112" text-anchor="middle" class="diagram-node">intent</text>
+
+              <rect x="370" y="248" width="118" height="54" rx="18" fill="#fae7b4" stroke="#d6a145" stroke-width="2" />
+              <text x="429" y="280" text-anchor="middle" class="diagram-node">stance</text>
+
+              <rect x="74" y="248" width="118" height="54" rx="18" fill="#dde9ff" stroke="#7296e7" stroke-width="2" />
+              <text x="133" y="280" text-anchor="middle" class="diagram-node">mechanism</text>
+
+              <line x1="192" y1="107" x2="216" y2="154" stroke="#ff8a6d" stroke-width="3" />
+              <line x1="370" y1="107" x2="344" y2="154" stroke="#3a9286" stroke-width="3" />
+              <line x1="370" y1="275" x2="344" y2="210" stroke="#d6a145" stroke-width="3" />
+              <line x1="192" y1="275" x2="216" y2="210" stroke="#7296e7" stroke-width="3" />
+
+              <rect x="60" y="164" width="114" height="42" rx="16" fill="#ffffff" stroke="#bbc7dd" stroke-width="2" />
+              <text x="117" y="190" text-anchor="middle" class="diagram-small">subject / target</text>
+
+              <rect x="386" y="164" width="112" height="42" rx="16" fill="#ffffff" stroke="#bbc7dd" stroke-width="2" />
+              <text x="442" y="190" text-anchor="middle" class="diagram-small">observed expression</text>
+            </svg>
+          </div>
+
+          <div class="spotlight-copy">
+            <p>
+              MoCA formalizes the problem of recovering what people truly feel, intend, or imply
+              when their expression is indirect. The work expands the thread from explicit emotion
+              understanding to latent social meaning under multimodal social context.
+            </p>
+            <ul class="feature-list">
+              <li>Defines three core dimensions: implicit affection, implicit intent, and implicit stance.</li>
+              <li>Builds a 3,000-instance multimodal benchmark from memes, debates, discussions, and sitcoms.</li>
+              <li>Introduces CoDAR, a conflict-driven abductive reasoning framework for hidden social inference.</li>
+            </ul>
+            <div class="card-actions">
+              <a class="button button-primary"  aria-disabled="true" href="#moca-card">Project</a>
+              <span class="button button-disabled" aria-disabled="true">Public page soon</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section-pad" id="community">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Community</p>
+          <h2>The workshop builds the public face of the thread.</h2>
+        </div>
+
+        <article class="community-card" data-reveal>
+          <div class="community-shot">
+            <div class="browser-frame">
+              <div class="browser-dots" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <svg
+                class="workshop-illustration"
+                viewBox="0 0 880 1180"
+                role="img"
+                aria-label="Illustrated overview of the first CogMAEC workshop website"
+              >
+                <defs>
+                  <linearGradient id="wsPageBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#f7f9fd" />
+                    <stop offset="100%" stop-color="#fff8ef" />
+                  </linearGradient>
+                  <linearGradient id="wsHeroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#eef4ff" />
+                    <stop offset="100%" stop-color="#f7efe7" />
+                  </linearGradient>
+                  <linearGradient id="wsAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#dd6a4b" />
+                    <stop offset="100%" stop-color="#e89c56" />
+                  </linearGradient>
+                  <linearGradient id="wsMint" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#e3f7f1" />
+                    <stop offset="100%" stop-color="#d5f1ea" />
+                  </linearGradient>
+                  <linearGradient id="wsGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#fff0bf" />
+                    <stop offset="100%" stop-color="#f7dc86" />
+                  </linearGradient>
+                </defs>
+
+                <rect x="0" y="0" width="880" height="1180" fill="url(#wsPageBg)" />
+
+                <!-- <rect x="0" y="0" width="880" height="56" fill="#f5f0e8" /> -->
+                <rect x="0" y="56" width="880" height="44" fill="#ffffff" />
+                <circle cx="171" cy="78" r="9" fill="#dd6a4b" />
+                <path d="M171 71 l3 6 -3 6 -3 -6z" fill="#fff7ef" opacity="0.9" />
+                <g fill="#62708c" font-family="Sora, sans-serif" font-size="12" font-weight="500">
+                  <text x="210" y="82">About</text>
+                  <text x="286" y="82">Schedule</text>
+                  <text x="381" y="82">Accepted Papers</text>
+                  <text x="505" y="82">Call for Papers</text>
+                  <text x="616" y="82">Speakers</text>
+                  <text x="712" y="82">Organizers</text>
+                </g>
+                <rect x="786" y="66" width="58" height="24" rx="12" fill="#2d9a67" />
+                <text x="815" y="82" text-anchor="middle" fill="#f7fff9" font-family="Sora, sans-serif" font-size="11" font-weight="700">Register</text>
+
+                <rect x="0" y="100" width="880" height="270" fill="url(#wsHeroBg)" />
+                <g opacity="0.3">
+                  <rect x="24" y="124" width="44" height="210" rx="22" fill="#d9e3f5" />
+                  <rect x="78" y="112" width="28" height="222" rx="14" fill="#e2e9f8" />
+                  <rect x="124" y="140" width="46" height="194" rx="23" fill="#dce6f6" />
+                  <rect x="715" y="120" width="44" height="214" rx="22" fill="#dce6f6" />
+                  <rect x="772" y="106" width="30" height="228" rx="15" fill="#e7edf8" />
+                  <rect x="818" y="136" width="38" height="198" rx="19" fill="#dce7f7" />
+                </g>
+                <g opacity="0.22" stroke="#bccae1" stroke-width="4" fill="none">
+                  <path d="M25 334 C110 272, 182 232, 244 210" />
+                  <path d="M855 334 C780 268, 720 230, 654 210" />
+                </g>
+                <text x="440" y="170" text-anchor="middle" fill="#d84f34" font-family="Sora, sans-serif" font-size="20" font-weight="700">
+                  The 1st CogMAEC Workshop
+                </text>
+                <text x="440" y="198" text-anchor="middle" fill="#e26b54" font-family="Sora, sans-serif" font-size="14" font-weight="500">
+                  Cognition-oriented Multimodal Affective and Empathetic Computing
+                </text>
+                <text x="440" y="222" text-anchor="middle" fill="#6f7891" font-family="Sora, sans-serif" font-size="12">
+                  27-31 October 2025 | Dublin, Ireland | ACM Multimedia 2025
+                </text>
+
+                <foreignObject x="202" y="244" width="476" height="74">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:Sora,sans-serif;font-size:12px;line-height:1.5;color:#4d5874;text-align:center;">
+                    A workshop on moving beyond visible affect recognition towards cognition-aware,
+                    context-grounded multimodal understanding, reasoning, and empathetic AI systems.
+                  </div>
+                </foreignObject>
+
+                <rect x="392" y="322" width="96" height="30" rx="15" fill="url(#wsAccent)" />
+                <text x="440" y="342" text-anchor="middle" fill="#fff9f3" font-family="Sora, sans-serif" font-size="12" font-weight="700">
+                  Learn More
+                </text>
+
+                <rect x="72" y="395" width="736" height="148" rx="24" fill="#ffffff" stroke="#e8e3d8" />
+                <text x="440" y="430" text-anchor="middle" fill="#d84f34" font-family="Fraunces, serif" font-size="28" font-weight="600">
+                  About the CogMAEC
+                </text>
+                <g fill="#58627a" font-family="Sora, sans-serif" font-size="13">
+                  <text x="118" y="466">Multimodal systems can detect visible affect, but often fail to explain</text>
+                  <text x="118" y="488">why emotions arise, what mental states drive them, and how implicit</text>
+                  <text x="118" y="510">social context shapes expression. CogMAEC connects cognition, reasoning,</text>
+                  <text x="118" y="532">and empathetic computing into one coherent research agenda.</text>
+                </g>
+
+                <rect x="72" y="572" width="736" height="332" rx="24" fill="#ffffff" stroke="#e8e3d8" />
+                <text x="440" y="612" text-anchor="middle" fill="#d84f34" font-family="Fraunces, serif" font-size="30" font-weight="600">
+                  Schedule Highlights
+                </text>
+                <rect x="106" y="640" width="668" height="34" rx="12" fill="#f4f0e8" />
+                <g fill="#5e6983" font-family="Sora, sans-serif" font-size="12" font-weight="700">
+                  <text x="128" y="662">Time</text>
+                  <text x="244" y="662">Session</text>
+                  <text x="648" y="662">Presenter</text>
+                </g>
+
+                <g font-family="Sora, sans-serif" font-size="12" fill="#4e5973">
+                  <rect x="106" y="688" width="668" height="42" rx="12" fill="#fff8f2" />
+                  <text x="128" y="714">13:30</text>
+                  <text x="244" y="714">Keynote I: Social Intelligence with LLMs</text>
+                  <text x="648" y="714">Speaker 1</text>
+
+                  <rect x="106" y="736" width="668" height="42" rx="12" fill="#f2fbfa" />
+                  <text x="128" y="762">14:15</text>
+                  <text x="244" y="762">Keynote II: Open Challenges for Multimodal Agents</text>
+                  <text x="648" y="762">Speaker 2</text>
+
+                  <rect x="106" y="784" width="668" height="42" rx="12" fill="#fff7e8" />
+                  <text x="128" y="810">16:00</text>
+                  <text x="244" y="810">Oral Session: Emotion, Memory, and Social Context</text>
+                  <text x="648" y="810">Accepted Papers</text>
+
+                  <rect x="106" y="832" width="668" height="42" rx="12" fill="#eef4ff" />
+                  <text x="128" y="858">17:00</text>
+                  <text x="244" y="858">Poster Session and Discussion</text>
+                  <text x="648" y="858">All attendees</text>
+                </g>
+
+                <rect x="72" y="932" width="736" height="188" rx="24" fill="#ffffff" stroke="#e8e3d8" />
+                <text x="440" y="970" text-anchor="middle" fill="#d84f34" font-family="Fraunces, serif" font-size="28" font-weight="600">
+                  Invited Speakers
+                </text>
+                <g transform="translate(132 1008)">
+                  <circle cx="0" cy="0" r="34" fill="#f2d4c8" />
+                  <circle cx="0" cy="-10" r="13" fill="#2e3951" />
+                  <rect x="-18" y="4" width="36" height="20" rx="10" fill="#56637e" />
+                  <text x="0" y="58" text-anchor="middle" fill="#56637e" font-family="Sora, sans-serif" font-size="11" font-weight="600">Speaker A</text>
+                </g>
+                <g transform="translate(292 1008)">
+                  <circle cx="0" cy="0" r="34" fill="#d8efe7" />
+                  <circle cx="0" cy="-10" r="13" fill="#2c5f59" />
+                  <rect x="-18" y="4" width="36" height="20" rx="10" fill="#4b8e84" />
+                  <text x="0" y="58" text-anchor="middle" fill="#56637e" font-family="Sora, sans-serif" font-size="11" font-weight="600">Speaker B</text>
+                </g>
+                <g transform="translate(452 1008)">
+                  <circle cx="0" cy="0" r="34" fill="#f7e7b9" />
+                  <circle cx="0" cy="-10" r="13" fill="#6a5726" />
+                  <rect x="-18" y="4" width="36" height="20" rx="10" fill="#b58b31" />
+                  <text x="0" y="58" text-anchor="middle" fill="#56637e" font-family="Sora, sans-serif" font-size="11" font-weight="600">Speaker C</text>
+                </g>
+                <g transform="translate(612 1008)">
+                  <circle cx="0" cy="0" r="34" fill="#dfe8fb" />
+                  <circle cx="0" cy="-10" r="13" fill="#3e4f78" />
+                  <rect x="-18" y="4" width="36" height="20" rx="10" fill="#6d88d7" />
+                  <text x="0" y="58" text-anchor="middle" fill="#56637e" font-family="Sora, sans-serif" font-size="11" font-weight="600">Speaker D</text>
+                </g>
+
+                <rect x="72" y="1140" width="736" height="16" rx="8" fill="url(#wsAccent)" opacity="0.14" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="community-copy">
+            <div class="card-topline">
+              <span class="pill pill-gold">Workshop</span>
+              <!-- <span class="pill">Dublin, Ireland</span> -->
+            </div>
+            <h3>The CogMAEC Workshop series</h3>
+            <p>
+              The workshop anchors the community around cognition-oriented multimodal affective and
+              empathetic computing. It frames the area around context, causal reasoning, emotion
+              understanding, and the next generation of affect-aware multimodal models.
+            </p>
+            <ul class="feature-list">
+              <li>Co-located with ACM Multimedia 2025 and organized as the first CogMAEC edition.</li>
+              <li>Brings together work on affective computing, MLLM reasoning, and cognitive modeling.</li>
+              <li>Includes invited talks, oral presentations, posters, and 11 accepted papers.</li>
+            </ul>
+            <div class="card-actions">
+              <a class="button button-primary" href="https://cogmaec.github.io/MM2025/" target="_blank" rel="noreferrer"
+                >ACMMM 2025 Workshop</a
+              >
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- <section class="section-pad section-shell" id="survey">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Survey</p>
+          <h2>A field map is planned as the next layer of this page.</h2>
+        </div>
+
+        <article class="survey-card" data-reveal>
+          <div>
+            <p class="survey-status">In preparation</p>
+            <h3>Survey paper and ecosystem map</h3>
+            <p>
+              The future survey section will synthesize datasets, cognitive reasoning paradigms,
+              evaluation settings, and open problems across multimodal affective and empathetic
+              computing. This slot is intentionally reserved so the website can grow with the
+              research thread rather than being rebuilt later.
+            </p>
+          </div>
+          <div class="survey-grid" aria-hidden="true">
+            <span>benchmarks</span>
+            <span>reasoning</span>
+            <span>social context</span>
+            <span>faithfulness</span>
+            <span>empathy</span>
+            <span>evaluation</span>
+          </div>
+        </article>
+      </section> -->
+
+
+
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-meta">© 2025 CogMAEC — All rights reserved.</p>
+      <p class="footer-meta">
+        Contact: Hao Fei (<a href="mailto:haofei7419@gmail.com">haofei7419@gmail.com</a>).
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
