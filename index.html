@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="CogAFFC is a research thread on Cognition-driven Affective Computing."
+      content="CogAFFC is a research thread on cognition-driven multimodal affective and empathetic computing."
     />
-    <title>CogAFFC | Cognition-driven Affective Computing</title>
+    <title>CogAFFC | Cognition-driven Multimodal Affective and Empathetic Computing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,10 +22,10 @@
     <header class="site-header">
       <a class="brand" href="#top" aria-label="CogAFFC home">
         <span class="brand-mark">C</span>
-        <span class="brand-text">CogAFFC</span>
+        <span class="brand-text">cogaffc</span>
       </a>
       <nav class="site-nav" aria-label="Primary">
-        <a href="#thread">Gallery</a>
+        <a href="#thread">Overview</a>
         <a href="#works">Works</a>
         <a href="#community">Workshop</a>
         <!-- <a href="#survey">Survey</a> -->
@@ -40,15 +40,15 @@
 
         <div class="hero-body">
           <div class="hero-copy" data-reveal>
-            <p class="hero-lead">Building multimodal AI that can read <span class="highlight highlight-coral">affect</span>, model <span class="highlight highlight-teal">minds</span>, and recover <span class="highlight highlight-gold">what people mean beyond what they say</span>. CogAFFC is motivated by a core gap: multimodal systems can often recognize visible emotion, yet still fail to explain why it emerges, what mental state causes it, and what hidden social meaning is being conveyed. It connects multimodal perception, mental reasoning, implicit social context, and empathetic intelligence into one coherent agenda.</p>
+            <p class="hero-lead">Building multimodal AI that can read <span class="highlight highlight-coral">affect</span>, model <span class="highlight highlight-teal">minds</span>, and recover <span class="highlight highlight-gold">what people mean beyond what they say</span>. CogAFFC is motivated by a core gap: multimodal systems can often recognize visible emotion, yet still fail to explain why it emerges, what mental state causes it, and what hidden social meaning is being conveyed. It connects multimodal perception, Theory-of-Mind reasoning, implicit social context, and empathetic intelligence into one coherent agenda.</p>
             <ul class="hero-stats" aria-label="Project summary">
               <li>
-                <strong>02</strong>
+                <strong>A</strong>
                 <span>flagship research works</span>
               </li>
               <li>
-                <strong>01</strong>
-                <span>community workshop already held</span>
+                <strong>B</strong>
+                <span>community workshops, surveys</span>
               </li>
               <!-- <li>
                 <strong>+1</strong>
@@ -60,7 +60,7 @@
           <div class="hero-visual" data-reveal>
             <div class="visual-card">
               <div class="floating-chip chip-a">Emotion reasoning</div>
-              <div class="floating-chip chip-b">Mental modeling</div>
+              <div class="floating-chip chip-b">Theory of Mind</div>
               <div class="floating-chip chip-c">Implicit social context</div>
               <svg viewBox="0 0 620 520" role="img" aria-label="CogAFFC research map">
                 <defs>
@@ -129,8 +129,7 @@
 
       <section class="section-pad" id="thread">
         <div class="section-heading" data-reveal>
-          <p class="eyebrow">Research thread</p>
-          <h2 class="thread-heading">One research thread across series of progressively deeper layers of understanding</h2>
+          <p class="eyebrow">Flagship Research</p>
         </div>
 
         <div class="thread-map">
@@ -150,7 +149,7 @@
 
           <article class="thread-card emphasized" data-reveal>
             <div class="thread-step">Layer 2</div>
-            <h3>Mental reasoning</h3>
+            <h3>Theory-of-Mind reasoning</h3>
             <p>
               Move from what is seen to what is mentally simulated: beliefs, intentions, causes,
               and intermediate cognitive states that explain emotion.
@@ -179,9 +178,93 @@
       </section>
 
       <section class="section-pad section-shell" id="works">
-        <div class="section-heading" data-reveal>
+        <!-- <div class="section-heading" data-reveal>
           <p class="eyebrow">Flagship works</p>
-        </div>
+        </div> -->
+
+        <article class="spotlight-card" id="thor-card" data-reveal>
+          <div class="spotlight-header">
+            <div class="card-topline">
+              <span class="pill pill-coral">ACL 2023</span>
+              <span class="pill">ISA + Chain-of-Thought</span>
+            </div>
+            <h3>
+              <a href="https://haofei.vip/THOR/" target="_blank" rel="noreferrer"
+                >THOR-ISA: Reasoning Implicit Sentiment with Chain-of-Thought Prompting</a
+              >
+            </h3>
+          </div>
+
+          <div class="spotlight-visual">
+            <svg viewBox="0 0 560 360" role="img" aria-label="THOR-ISA overview diagram">
+              <defs>
+                <linearGradient id="thorBackground" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#fff3e8" />
+                  <stop offset="100%" stop-color="#eef8f5" />
+                </linearGradient>
+                <linearGradient id="thorFlow" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#ff8a6d" />
+                  <stop offset="100%" stop-color="#3a9286" />
+                </linearGradient>
+              </defs>
+
+              <rect x="18" y="18" width="524" height="324" rx="28" fill="url(#thorBackground)" />
+
+              <rect x="54" y="56" width="152" height="64" rx="20" fill="#fffaf4" stroke="#ffb287" stroke-width="2" />
+              <text x="130" y="82" text-anchor="middle" class="diagram-kicker">Implicit Sentiment</text>
+              <text x="130" y="106" text-anchor="middle" class="diagram-label">latent opinion cues</text>
+
+              <rect x="82" y="162" width="124" height="44" rx="16" fill="#ffd8c4" />
+              <text x="144" y="189" text-anchor="middle" class="diagram-node">Hop 1: aspect</text>
+
+              <rect x="82" y="220" width="124" height="44" rx="16" fill="#d8f1ea" />
+              <text x="144" y="247" text-anchor="middle" class="diagram-node">Hop 2: opinion</text>
+
+              <rect x="82" y="278" width="124" height="44" rx="16" fill="#f8e6b2" />
+              <text x="144" y="305" text-anchor="middle" class="diagram-node">Hop 3: polarity</text>
+
+              <path d="M208 184 C254 184, 270 154, 322 154" fill="none" stroke="url(#thorFlow)" stroke-width="3.2" />
+              <path d="M208 242 C254 242, 270 212, 322 212" fill="none" stroke="url(#thorFlow)" stroke-width="3.2" />
+              <path d="M208 300 C254 300, 270 270, 322 270" fill="none" stroke="url(#thorFlow)" stroke-width="3.2" />
+
+              <rect x="326" y="126" width="168" height="56" rx="18" fill="#17233f" />
+              <text x="410" y="149" text-anchor="middle" class="diagram-kicker diagram-kicker-light">THOR</text>
+              <text x="410" y="171" text-anchor="middle" class="diagram-label-light">three-hop reasoning</text>
+
+              <rect x="326" y="198" width="168" height="56" rx="18" fill="#1f314b" />
+              <text x="410" y="221" text-anchor="middle" class="diagram-kicker diagram-kicker-light">CoT Prompting</text>
+              <text x="410" y="243" text-anchor="middle" class="diagram-label-light">step-by-step inference</text>
+
+              <rect x="326" y="270" width="168" height="40" rx="14" fill="#ffffff" stroke="#bfc9dd" stroke-width="2" />
+              <text x="410" y="295" text-anchor="middle" class="diagram-small">supervised + zero-shot gains</text>
+
+              <circle cx="308" cy="154" r="6" fill="#ff8a6d" />
+              <circle cx="308" cy="212" r="6" fill="#3a9286" />
+              <circle cx="308" cy="270" r="6" fill="#d6a145" />
+            </svg>
+          </div>
+
+          <div class="spotlight-copy">
+            <p>
+              THOR-ISA studies implicit sentiment analysis, where opinion cues appear in obscure
+              and indirect forms. The work introduces a three-hop Chain-of-Thought prompting
+              framework that progressively infers latent aspect, opinion, and final sentiment polarity.
+            </p>
+            <ul class="feature-list">
+              <li>Targets ISA settings that require commonsense and multi-hop reasoning over latent intent.</li>
+              <li>Introduces THOR, a three-step prompting principle for aspect, opinion, and polarity inference.</li>
+              <li>Improves the state of the art by over 6% F1 in supervised setup and over 50% F1 in zero-shot setting.</li>
+            </ul>
+            <div class="card-actions">
+              <a class="button button-primary" href="https://haofei.vip/THOR/" target="_blank" rel="noreferrer"
+                >Project</a
+              >
+              <a class="button button-secondary" href="https://arxiv.org/abs/2305.11255" target="_blank" rel="noreferrer"
+                >Paper</a
+              >
+            </div>
+          </div>
+        </article>
 
         <article class="spotlight-card" id="hitemotion-card" data-reveal>
           <div class="spotlight-copy">
@@ -211,13 +294,13 @@
               <a class="button button-secondary" href="https://arxiv.org/abs/2602.00971" target="_blank" rel="noreferrer"
                 >Paper</a
               >
-              <a
+              <!-- <a
                 class="button button-secondary"
                 href="https://github.com/Eurekaleo/Emotional-Intelligence"
                 target="_blank"
                 rel="noreferrer"
                 >Code and data</a
-              >
+              > -->
             </div>
           </div>
 
@@ -327,8 +410,8 @@
               <li>Introduces CoDAR, a conflict-driven abductive reasoning framework for hidden social inference.</li>
             </ul>
             <div class="card-actions">
-              <a class="button button-primary"  aria-disabled="true" href="#moca-card">Project</a>
-              <span class="button button-disabled" aria-disabled="true">Public page soon</span>
+              <!-- <a class="button button-primary"  aria-disabled="true" href="#moca-card">Project</a> -->
+              <span class="button button-disabled" aria-disabled="true">Coming soon</span>
             </div>
           </div>
         </article>
@@ -337,7 +420,7 @@
       <section class="section-pad" id="community">
         <div class="section-heading" data-reveal>
           <p class="eyebrow">Community</p>
-          <h2>The workshop builds the public face of the thread.</h2>
+          <!-- <h2>The workshop builds the public face of the thread.</h2> -->
         </div>
 
         <article class="community-card" data-reveal>
@@ -408,7 +491,7 @@
                   <path d="M855 334 C780 268, 720 230, 654 210" />
                 </g>
                 <text x="440" y="170" text-anchor="middle" fill="#d84f34" font-family="Sora, sans-serif" font-size="20" font-weight="700">
-                  The 1st CogAFFC Workshop
+                  The 1st CogMAEC Workshop
                 </text>
                 <text x="440" y="198" text-anchor="middle" fill="#e26b54" font-family="Sora, sans-serif" font-size="14" font-weight="500">
                   Cognition-oriented Multimodal Affective and Empathetic Computing
@@ -431,12 +514,12 @@
 
                 <rect x="72" y="395" width="736" height="148" rx="24" fill="#ffffff" stroke="#e8e3d8" />
                 <text x="440" y="430" text-anchor="middle" fill="#d84f34" font-family="Fraunces, serif" font-size="28" font-weight="600">
-                  About the CogAFFC
+                  About the CogMAEC
                 </text>
                 <g fill="#58627a" font-family="Sora, sans-serif" font-size="13">
                   <text x="118" y="466">Multimodal systems can detect visible affect, but often fail to explain</text>
                   <text x="118" y="488">why emotions arise, what mental states drive them, and how implicit</text>
-                  <text x="118" y="510">social context shapes expression. CogAFFC connects cognition, reasoning,</text>
+                  <text x="118" y="510">social context shapes expression. CogMAEC connects cognition, reasoning,</text>
                   <text x="118" y="532">and empathetic computing into one coherent research agenda.</text>
                 </g>
 
@@ -512,19 +595,19 @@
               <span class="pill pill-gold">Workshop</span>
               <!-- <span class="pill">Dublin, Ireland</span> -->
             </div>
-            <h3>The CogAFFC Workshop series</h3>
+            <h3>The CogMAEC Workshop series</h3>
             <p>
               The workshop anchors the community around cognition-oriented multimodal affective and
               empathetic computing. It frames the area around context, causal reasoning, emotion
               understanding, and the next generation of affect-aware multimodal models.
             </p>
             <ul class="feature-list">
-              <li>Co-located with ACM Multimedia 2025 and organized as the first CogAFFC edition.</li>
+              <li>Co-located with ACM Multimedia 2025 and organized as the first CogMAEC edition.</li>
               <li>Brings together work on affective computing, MLLM reasoning, and cognitive modeling.</li>
               <li>Includes invited talks, oral presentations, posters, and 11 accepted papers.</li>
             </ul>
             <div class="card-actions">
-              <a class="button button-primary" href="https://CogAFFC.github.io/MM2025/" target="_blank" rel="noreferrer"
+              <a class="button button-primary" href="https://cogaffc.github.io/MM2025/" target="_blank" rel="noreferrer"
                 >ACMMM 2025 Workshop</a
               >
             </div>

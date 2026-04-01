@@ -512,7 +512,7 @@ button,
   position: absolute;
   left: 10%;
   right: 10%;
-  top: -1rem;
+  bottom: -2.6rem;
   height: 2px;
   background: linear-gradient(90deg, rgba(217, 103, 79, 0.24), rgba(44, 140, 129, 0.4), rgba(198, 148, 51, 0.3));
 }
@@ -623,19 +623,23 @@ button,
   letter-spacing: -0.04em;
 }
 
-.spotlight-copy h3 a {
+.spotlight-copy h3 a,
+.spotlight-header h3 a {
   color: inherit;
 }
 
-.spotlight-copy h3 a:hover {
+.spotlight-copy h3 a:hover,
+.spotlight-header h3 a:hover {
   color: var(--coral);
 }
 
+#thor-card,
 #hitemotion-card,
 #moca-card {
   align-items: start;
 }
 
+#thor-card,
 #moca-card {
   align-items: stretch;
 }
@@ -647,17 +651,20 @@ button,
   white-space: nowrap;
 }
 
+#thor-card .spotlight-header,
 #moca-card .spotlight-header {
   grid-column: 1 / -1;
   padding-bottom: 0;
 }
 
+#thor-card .spotlight-header h3,
 #moca-card .spotlight-header h3 {
   font-size: clamp(1.45rem, 2vw, 1rem);
   letter-spacing: -0.03em;
   white-space: nowrap;
 }
 
+#thor-card .spotlight-visual,
 #moca-card .spotlight-visual {
   grid-column: 1;
   grid-row: 2;
@@ -665,6 +672,7 @@ button,
   margin-top: 0.85rem;
 }
 
+#thor-card .spotlight-copy,
 #moca-card .spotlight-copy {
   grid-column: 2;
   grid-row: 2;
@@ -879,6 +887,7 @@ button,
     font-size: clamp(1.8rem, 3vw, 2.6rem);
   }
 
+  #thor-card .spotlight-header h3,
   #moca-card .spotlight-header h3 {
     white-space: normal;
     font-size: clamp(1.8rem, 3vw, 2.6rem);
@@ -889,6 +898,9 @@ button,
     margin-top: 0;
   }
 
+  #thor-card .spotlight-header,
+  #thor-card .spotlight-copy,
+  #thor-card .spotlight-visual,
   #moca-card .spotlight-header,
   #moca-card .spotlight-copy,
   #moca-card .spotlight-visual {
